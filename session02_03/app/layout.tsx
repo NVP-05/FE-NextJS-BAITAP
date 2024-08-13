@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Header from "./Bai7/Header";
 import "./globals.css";
-import Footer from "./Bai8/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,14 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="https://learn.rikkeiacademy.com/favicon.ico.png" />
-      </head>
-      <body className={inter.className}>
-        <Header></Header>
-        Trang chủ
-        <Footer></Footer>
-        {children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
