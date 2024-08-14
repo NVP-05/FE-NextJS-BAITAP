@@ -38,8 +38,6 @@ export default function Bai2() {
                 <input
                   type="checkbox"
                   className="form-checkbox h-5 w-5 text-blue-600"
-                  checked={index % 2 === 0}
-                  readOnly
                 />
               </label>
             ))}
